@@ -77,7 +77,7 @@ The project contains 15 SQL queries covering the following analyses:
 - Subqueries
 - `ROUND()`
 
-## 🔍 Key Findings and Insights
+## 🔍 Analysis Highlights
 
 The analysis explores several aspects of traffic enforcement activity:
 
