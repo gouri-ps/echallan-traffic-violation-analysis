@@ -42,9 +42,7 @@ The dataset contains **4,061 daily records and 10 columns**, covering January 1,
 
 The CSV file is named `echallan_daily_data.csv`, and the MySQL table used for analysis is `violations`.
 
-**Dataset source:** [Kaggle – eChallan Traffic Violation Dataset](YOUR_KAGGLE_DATASET_URL)
-
-Replace `YOUR_KAGGLE_DATASET_URL` with the original Kaggle dataset page URL before publishing. Since the dataset file is not currently included in the repository, download it from the source before running the queries.
+**Dataset Source:** [Indian Traffic E-Challan Daily Dataset (2015–2026) – Kaggle](https://www.kaggle.com/datasets/bhanageviraj/indian-traffic-e-challan-daily-dataset-20152026/data)
 
 ## 📊 SQL Analysis Performed
 
