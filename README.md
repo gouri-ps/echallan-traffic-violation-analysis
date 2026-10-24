@@ -1,3 +1,4 @@
+
 # eChallan Traffic Enforcement & Violation Analysis Using MySQL
 
 ## 📌 Project Overview
@@ -66,7 +67,7 @@ The project contains 15 SQL queries covering the following analyses:
 
 ## 🧠 SQL Concepts Used
 
-- `SELECT`, `WHERE`, `AND`
+- `SELECT`, `WHERE`, and `AND`
 - Aggregate functions: `COUNT()`, `SUM()`, `AVG()`, `MIN()`, `MAX()`
 - `DISTINCT`
 - `GROUP BY` and `HAVING`
@@ -77,18 +78,20 @@ The project contains 15 SQL queries covering the following analyses:
 - Subqueries
 - `ROUND()`
 
-## 🔍 Analysis Highlights
+## 🔍 Key Findings and Insights
 
-The analysis explores several aspects of traffic enforcement activity:
+Analysis of the uploaded dataset revealed the following:
 
-- **Challan disposal:** Examines the difference between total and disposed challans to identify records with substantial unresolved activity.
-- **Pending workload:** Identifies dates and years with higher pending challan counts and frequent occurrences of more than 100 pending challans.
-- **Financial analysis:** Evaluates the distribution of pending amounts and identifies dates where pending amounts exceed disposed amounts.
-- **Yearly trends:** Compares challan volumes and court-case activity across years to understand changes in recorded enforcement activity.
-- **Court-related workload:** Examines pending, disposed, and total court cases to understand unresolved court-related activity.
-- **High-activity dates:** Highlights dates with high combined pending challan and court-case counts.
+- **Total Challan Activity:** The dataset contains approximately **416.51 million total challans** across 4,061 daily records.
+- **Pending Challans:** The sum of recorded pending challans is approximately **257.36 million**.
+- **Yearly Trends:** Among complete calendar years, **2025 recorded the highest total challan count**, at approximately 97.88 million.
+- **Pending Financial Amounts:** The average recorded daily pending amount is approximately **99.98 million in the dataset's recorded units**.
+- **Disposal Patterns:** In **2,825 records**, pending challans exceeded disposed challans.
+- **Highest Pending Activity:** November 15, 2025, recorded the highest pending challan count, at **280,588**.
 
-These analyses help explore unresolved enforcement activity, pending financial amounts, and court-related workloads. Specific numerical conclusions should be added after reviewing the executed MySQL query results and verifying them against the dataset.
+These findings illustrate how SQL can be used to summarize large volumes of traffic enforcement data, identify periods of high pending workload, and investigate challan disposal and financial patterns.
+
+*Note: These figures are calculated from the supplied CSV and should be cross-checked against the corresponding MySQL query outputs before publication. The annual comparison excludes 2026 because the dataset contains only partial-year data for that year.*
 
 ## 🚀 How to Run the Project
 
@@ -101,7 +104,7 @@ These analyses help explore unresolved enforcement activity, pending financial a
 ### Steps
 
 1. Clone or download this repository.
-2. Download `echallan_daily_data.csv` from the Kaggle dataset source linked above and place it in your project folder.
+2. Download `echallan_daily_data.csv` from the Kaggle dataset source linked above.
 3. Open MySQL Workbench and create the database:
 
    ```sql
@@ -112,7 +115,7 @@ These analyses help explore unresolved enforcement activity, pending financial a
 4. Import `echallan_daily_data.csv` into a table named `violations` using the MySQL Workbench Table Data Import Wizard.
 5. Confirm that the imported column names and data types match the SQL queries.
 6. Open `echallan_queries.sql` in MySQL Workbench and execute the queries.
-7. Review the results to explore the findings and patterns in the dataset.
+7. Review the query results to explore the findings and patterns in the dataset.
 
 ## 📁 Project Structure
 
@@ -124,11 +127,11 @@ eChallan-Traffic-Violation-Analysis/
 └── README.md
 ```
 
-The repository currently contains the SQL queries, project report, and documentation. The CSV dataset is available separately from Kaggle and must be downloaded before running the analysis.
+The repository currently contains the SQL queries, project report, and documentation. The dataset can be downloaded separately from Kaggle before running the analysis.
 
 ## 📝 Conclusion
 
-This project demonstrates the application of MySQL for analyzing eChallan traffic enforcement data and exploring patterns in challan disposal, pending cases, financial amounts, and yearly enforcement activity.
+This project demonstrates the application of MySQL to eChallan traffic enforcement data, exploring challan disposal, pending cases, financial amounts, and yearly enforcement patterns.
 
 By applying filtering, aggregation, grouping, date functions, sorting, and subqueries, the project demonstrates practical SQL skills and the use of data analysis to better understand unresolved traffic violations and court-related workloads.
 
